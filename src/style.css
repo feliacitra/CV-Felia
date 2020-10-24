@@ -1,0 +1,123 @@
+body {
+  background-color: #2d3b48;
+  padding: 20px;
+  margin: 0;
+}
+.title {
+  color: white;
+}
+h1,
+h2,
+p,
+ul,
+li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #23ba91;
+  padding: 0;
+}
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+/*style untuk body*/
+body {
+  background-image: url(Image/background.jpg);
+  background-size: 1500px;
+  font: 16px/20px arial;
+}
+/* style untuk id container*/
+#container {
+  width: 800px;
+  margin: auto;
+  background-color: white;
+}
+
+/*padding pada class header*/
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+/*mengatur besar huruf judul*/
+/*class judul didalam class header (jangan lupa spasi)*/
+.header .judul {
+  font-size: 50px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*navigasi agar horizontal*/
+.header li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-bottom: 5px solid #00fa9a;
+}
+/*memberi warna navigasi dan hpus underline*/
+.header a {
+  text-decoration: none;
+  color: #3cb371;
+  padding: 5px;
+}
+/*efek kursor pada navigasi menu*/
+/* Dynamic Psudo class */
+.header a:hover {
+  background-color: #7fff00;
+  color: black;
+}
+
+/*style untuk content*/
+.conten {
+  padding: 20px;
+  font-size: 15px;
+}
+/*mengatur konten judul*/
+.conten h2 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid #808080;
+}
+
+/*mengatur footer*/
+.footer {
+  background-color: #808080;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+/*mengatur class copy didalam class footer*/
+.footer .copy {
+  color: white;
+  text-align: center;
+  font-style: 12px;
+}
+.more {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* display inline-block bisa di atur tinggi lbarnya dan mana aja yg mau di block */
+.gaya-inline-block {
+  display: inline-block;
+  background-color: aqua;
+  width: 250px;
+  height: 30px;
+}
