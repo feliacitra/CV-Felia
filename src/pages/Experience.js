@@ -42,8 +42,8 @@ const Experience = () => {
             <td>:</td>
             <td>
               Lab Assistant digital system course at the electrical engineering
-              and digital engineering laboratory Telkom Institute of Technology
-              Purwokerto
+              and digital engineering laboratorium Telkom Institute of
+              Technology Purwokerto
             </td>
           </tr>
         </table>
