@@ -1,8 +1,9 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import ThemeContext from './theme-context';
 const Experience = () => {
+  const themes = useContext(ThemeContext);
   return (
-    <div>
+    <div style={themes}>
       <div className="conten">
         <h2>Education</h2>
         <table width="750px">

@@ -8,6 +8,10 @@ import { About, Experience, Skills, Contact } from '../pages';
 import '../style.css';
 const routes = [
   {
+    path: '/About',
+    component: About,
+  },
+  {
     path: '/Experience',
     component: Experience,
   },

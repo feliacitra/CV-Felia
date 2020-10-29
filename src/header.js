@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
+
 const Header = () => {
   const listMenu = ['About', 'Experience', 'Skills', 'Contact'];
 

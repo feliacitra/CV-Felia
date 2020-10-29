@@ -2,12 +2,12 @@ import React from 'react';
 
 export const themes = {
   dark: {
-    color: 'white',
-    background: 'black',
+    color: 'black',
+    background: '#7FFFD4',
   },
   light: {
     color: 'black',
-    background: 'white',
+    background: '	White',
   },
 };
 const ThemeContext = React.createContext(themes.dark);

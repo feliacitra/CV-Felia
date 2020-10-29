@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext } from 'react';
+import ThemeContext from './theme-context';
 const Kontak = (props) => {
   const { headerName } = props;
   const [name, setName] = useState(headerName);
@@ -9,8 +9,9 @@ const Kontak = (props) => {
     'Whatsapp = +6282326080937',
   ];
   const [nameIndex, setNameIndex] = useState(0);
+  const themes = useContext(ThemeContext);
   return (
-    <div>
+    <div style={themes}>
       <p>{`Hello You Can Contact me on ${name}`}</p>
       <button
         type="submit"

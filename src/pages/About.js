@@ -50,6 +50,9 @@ const About = () => {
         </ul>
         <Coment addComent={addComent} />
       </div>
+      <div className="footer">
+        <p className="copy">Copyright@ 2020. Felia Citra</p>
+      </div>
     </div>
   );
 };

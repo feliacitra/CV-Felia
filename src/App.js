@@ -23,55 +23,55 @@ import './style.css';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import routes from './config/route';
 import Header from './header';
-import About from './pages/About';
+
 import ThemeContext, { themes } from './pages/theme-context';
 
-const isUserAuthenticated = true;
-const PrivateRoute = ({ component: Component }) => {
-  return (
-    <Route
-      render={() => {
-        if (isUserAuthenticated) {
-          return <Component />;
-        }
-        return <Redirect to="/login" />;
-      }}
-    />
-  );
-};
+// const isUserAuthenticated = true;
+// const PrivateRoute = ({ component: Component }) => {
+//   return (
+//     <Route
+//       render={() => {
+//         if (isUserAuthenticated) {
+//           return <Component />;
+//         }
+//         return <Redirect to="/login" />;
+//       }}
+//     />
+//   );
+// };
 
 const App = () => {
   const [theme, setTheme] = useState(themes.dark);
   const toggleTheme = () =>
     theme == themes.dark ? setTheme(themes.light) : setTheme(themes.dark);
   return (
-    <BrowserRouter>
-      <Header />
-      <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={theme}>
+      <BrowserRouter>
+        <Header />
         <button onClick={toggleTheme}>Change theme</button>
-        <About />
-      </ThemeContext.Provider>
-      <Switch>
-        {routes.map((route) => {
-          if (route.isPublic) {
-            return (
-              <Route
-                path={route.path}
-                component={route.component}
-                key={route.path}
-              />
-            );
-          }
-          return (
-            <PrivateRoute
-              path={route.path}
-              component={route.component}
-              key={route.path}
-            />
-          );
-        })}
-      </Switch>
-    </BrowserRouter>
+        <Switch>
+          {routes.map(
+            (route) => {
+              // if (route.isPublic) {
+              return (
+                <Route
+                  path={route.path}
+                  component={route.component}
+                  key={route.path}
+                />
+              );
+            }
+            // return (
+            //   <PrivateRoute
+            //     path={route.path}
+            //     component={route.component}
+            //     key={route.path}
+            //   />
+            // );
+          )}
+        </Switch>
+      </BrowserRouter>
+    </ThemeContext.Provider>
   );
 };
 
