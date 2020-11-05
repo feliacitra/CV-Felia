@@ -19,7 +19,7 @@
 
 // export default App;
 import React, { useState } from 'react';
-import './style.css';
+import './App.css';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import routes from './config/route';
 import Header from './header';
